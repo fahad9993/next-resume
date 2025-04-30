@@ -58,6 +58,10 @@ body {
   .section-h2 {
     @apply text-lg font-bold;
   }
+
+  .section-mt {
+    @apply mt-8;
+  }
 }
 
 /* global styles for print layout */

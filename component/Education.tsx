@@ -2,7 +2,7 @@ import { FaRegCalendarDays } from "react-icons/fa6";
 
 export default function Education() {
   return (
-    <section className="mt-8">
+    <section className="section-mt">
       <h2 className="section-title">Education</h2>
       {/* bsc */}
       <div>

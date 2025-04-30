@@ -2,7 +2,7 @@ import { FaLocationDot, FaRegCalendarDays } from "react-icons/fa6";
 
 export default function Experience() {
   return (
-    <section className="mt-8">
+    <section className="section-mt">
       <h2 className="section-title">Experience</h2>
       {/* exp-1 */}
       <div>

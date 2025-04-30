@@ -3,6 +3,7 @@ import Courses from "@/component/Courses";
 import Education from "@/component/Education";
 import Experience from "@/component/Experience";
 import Header from "@/component/Header";
+import Reference from "@/component/Reference";
 import Skills from "@/component/Skills";
 import Summary from "@/component/Summary";
 import Thesis from "@/component/Thesis";
@@ -24,6 +25,7 @@ export default function Home() {
             <Education />
             <Thesis />
             <Courses />
+            <Reference />
           </div>
         </div>
       </div>

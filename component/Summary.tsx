@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Summary() {
   return (
-    <section className="mt-8">
+    <section className="section-mt">
       <h2 className="section-title">Summary</h2>
-      <p className="mt-1">
+      <p className="mt-2">
         Dynamic professional with a background in mechanical engineering,
         administrative, and finance roles, coupled with a passion for
         programming. Strong problem-solving abilities and adaptability across

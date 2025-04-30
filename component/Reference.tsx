@@ -10,14 +10,13 @@ export default function Reference() {
           <p>Prof. Dr. Be-Nazir Ahmed</p>
           <p>
             Former National Consultant, Directorate General of Health Services
-            (DGHS)
           </p>
           <div className="flex items-center space-x-2">
             <MdEmail />
             <a href="mailto:{benazir1959@gmail.com">benazir1959@gmail.com</a>
           </div>
         </div>
-        <div className="mt-1">
+        <div className="mt-2">
           <p>Dr. Md. Amiruzzaman</p>
           <p>Treasurer, HISP Bangladesh Foundation</p>
           <div className="flex items-center space-x-2">

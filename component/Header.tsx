@@ -12,7 +12,7 @@ import { rubik } from "@/app/font";
 
 export default function Header() {
   return (
-    <header className="bg-mblue text-white padding-x padding-t">
+    <header className="bg-primary text-white padding-x padding-t">
       <div className="text-center flex flex-row justify-between pb-4 w-full">
         <div className="w-fit">
           <div className="text-left mb-2">

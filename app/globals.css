@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  --color-mblue: #183b4e;
-  --color-mblue-light: #27548a;
+  --color-primary: #183b4e;
+  --color-secondary: #27548a;
   --font-rubik: var(--font-rubik);
 }
 
@@ -47,12 +47,12 @@ body {
 
 @layer components {
   .section-title {
-    @apply font-rubik text-xl font-medium text-mblue border-b-3 uppercase;
+    @apply font-rubik text-xl font-medium text-primary border-b-3 uppercase;
     /* font-family: var(--font-inter); */
   }
 
   .section-h1 {
-    @apply font-rubik text-xl mt-2;
+    @apply font-rubik text-xl text-secondary mt-2;
   }
 
   .section-h2 {

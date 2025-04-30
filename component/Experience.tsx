@@ -6,7 +6,7 @@ export default function Experience() {
       <h2 className="section-title">Experience</h2>
       {/* exp-1 */}
       <div>
-        <h3 className="text-xl mt-1">Admin and Accounts Officer</h3>
+        <h3 className="section-h1">Admin and Accounts Officer</h3>
         <h4 className="text-lg font-bold">HISP Bangladesh Foundation</h4>
         <div className="flex items-baseline space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
@@ -44,7 +44,7 @@ export default function Experience() {
       </div>
       {/* exp-2 */}
       <div>
-        <h3 className="text-xl mt-2">Administartive Assistant</h3>
+        <h3 className="section-h1">Administartive Assistant</h3>
         <h4 className="text-lg font-bold">World Health Organization</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
@@ -91,7 +91,7 @@ export default function Experience() {
       </div>
       {/* exp-3 */}
       <div>
-        <h3 className="text-xl mt-2">Administartive Assistant</h3>
+        <h3 className="section-h1">Administartive Assistant</h3>
         <h4 className="text-lg font-bold">
           Directorate General of Health Services
         </h4>

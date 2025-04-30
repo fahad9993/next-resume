@@ -6,7 +6,7 @@ export default function Education() {
       <h2 className="section-title">Education</h2>
       {/* bsc */}
       <div>
-        <h3 className="text-xl mt-1">BSc in Mechanical Engineering</h3>
+        <h3 className="section-h1">BSc in Mechanical Engineering</h3>
         <h4 className="text-lg font-bold">
           Bangladesh University of Engineering and Technology
         </h4>
@@ -19,7 +19,7 @@ export default function Education() {
       </div>
       {/* hsc */}
       <div>
-        <h3 className="text-xl mt-1">HSC</h3>
+        <h3 className="section-h1">HSC</h3>
         <h4 className="text-lg font-bold">Dhaka Residential Model College</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
@@ -30,7 +30,7 @@ export default function Education() {
       </div>
       {/* ssc */}
       <div>
-        <h3 className="text-xl mt-1">SSC</h3>
+        <h3 className="section-h1">SSC</h3>
         <h4 className="text-lg font-bold">Dhaka Residential Model College</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">

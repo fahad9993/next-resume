@@ -7,7 +7,7 @@ export default function Education() {
       {/* bsc */}
       <div>
         <h3 className="section-h1">BSc in Mechanical Engineering</h3>
-        <h4 className="text-lg font-bold">
+        <h4 className="section-h2">
           Bangladesh University of Engineering and Technology
         </h4>
         <div className="flex items-center space-x-4 text-sm">
@@ -20,7 +20,7 @@ export default function Education() {
       {/* hsc */}
       <div>
         <h3 className="section-h1">HSC</h3>
-        <h4 className="text-lg font-bold">Dhaka Residential Model College</h4>
+        <h4 className="section-h2">Dhaka Residential Model College</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
@@ -31,7 +31,7 @@ export default function Education() {
       {/* ssc */}
       <div>
         <h3 className="section-h1">SSC</h3>
-        <h4 className="text-lg font-bold">Dhaka Residential Model College</h4>
+        <h4 className="section-h2">Dhaka Residential Model College</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />

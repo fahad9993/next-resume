@@ -7,7 +7,7 @@ export default function Experience() {
       {/* exp-1 */}
       <div>
         <h3 className="section-h1">Admin and Accounts Officer</h3>
-        <h4 className="text-lg font-bold">HISP Bangladesh Foundation</h4>
+        <h4 className="section-h2">HISP Bangladesh Foundation</h4>
         <div className="flex items-baseline space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
@@ -45,7 +45,7 @@ export default function Experience() {
       {/* exp-2 */}
       <div>
         <h3 className="section-h1">Administartive Assistant</h3>
-        <h4 className="text-lg font-bold">World Health Organization</h4>
+        <h4 className="section-h2">World Health Organization</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
@@ -92,9 +92,7 @@ export default function Experience() {
       {/* exp-3 */}
       <div>
         <h3 className="section-h1">Administartive Assistant</h3>
-        <h4 className="text-lg font-bold">
-          Directorate General of Health Services
-        </h4>
+        <h4 className="section-h2">Directorate General of Health Services</h4>
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />

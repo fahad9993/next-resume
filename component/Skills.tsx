@@ -9,7 +9,7 @@ export default function Skills() {
         {skillData.map(({ category, skills }: SkillCategory) => {
           return (
             <div key={category} className="flex mb-2 items-baseline flex-wrap">
-              <span className="text-lg font-bold mr-2">{category}</span>
+              <span className="section-h2 mr-2">{category}</span>
               {skills.map((item, index) => (
                 <span
                   key={index}

@@ -50,8 +50,13 @@ body {
     @apply font-rubik text-xl font-medium text-mblue border-b-3 uppercase;
     /* font-family: var(--font-inter); */
   }
+
   .section-h1 {
     @apply font-rubik text-xl mt-2;
+  }
+
+  .section-h2 {
+    @apply text-lg font-bold;
   }
 }
 

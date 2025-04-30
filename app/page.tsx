@@ -1,4 +1,5 @@
 // app/page.tsx
+import Courses from "@/component/Courses";
 import Education from "@/component/Education";
 import Experience from "@/component/Experience";
 import Header from "@/component/Header";
@@ -14,14 +15,15 @@ export default function Home() {
         {/******* Column 1 *******/}
         <div className="flex gap-10 w-full padding-x">
           <div className="w-[60%]">
+            <Summary />
             <Experience />
-            <Education />
           </div>
           {/******* Column 2 *******/}
           <div className="w-[40%]">
-            <Summary />
             <Skills />
+            <Education />
             <Thesis />
+            <Courses />
           </div>
         </div>
       </div>

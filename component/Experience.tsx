@@ -3,9 +3,7 @@ import { FaLocationDot, FaRegCalendarDays } from "react-icons/fa6";
 export default function Experience() {
   return (
     <section className="mt-8">
-      <h2 className="text-xl font-medium text-mblue border-b-3 uppercase">
-        Experience
-      </h2>
+      <h2 className="section-title">Experience</h2>
       {/* exp-1 */}
       <div>
         <h3 className="text-xl mt-1">Admin and Accounts Officer</h3>

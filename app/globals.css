@@ -3,6 +3,7 @@
 @theme {
   --color-mblue: #183b4e;
   --color-mblue-light: #27548a;
+  --font-rubik: var(--font-rubik);
 }
 
 body {
@@ -27,7 +28,6 @@ body {
     font-family: var(--font-inter);
   }
 
-  h2,
   h3,
   header {
     font-family: var(--font-rubik);
@@ -42,6 +42,13 @@ body {
   .padding-x {
     padding-left: var(--custom-margin);
     padding-right: var(--custom-margin);
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply font-rubik text-xl font-medium text-mblue border-b-3 uppercase;
+    /* font-family: var(--font-inter); */
   }
 }
 

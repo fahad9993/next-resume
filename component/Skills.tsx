@@ -4,9 +4,7 @@ import { SkillCategory } from "@/data/types";
 export default function Skills() {
   return (
     <section className="mt-8">
-      <h2 className="text-xl font-medium text-mblue border-b-3 uppercase">
-        Skills/Core Competencies
-      </h2>
+      <h2 className="section-title">Skills/Core Competencies</h2>
       <div className="mt-1">
         {skillData.map(({ category, skills }: SkillCategory) => {
           return (

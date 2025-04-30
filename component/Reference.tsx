@@ -13,10 +13,10 @@ export default function Reference() {
           </p>
           <div className="flex items-center space-x-2">
             <MdEmail />
-            <a href="mailto:{benazir1959@gmail.com">benazir1959@gmail.com</a>
+            <a href="mailto:benazir1959@gmail.com">benazir1959@gmail.com</a>
           </div>
         </div>
-        <div className="mt-2">
+        <div className="mt-6">
           <p>Dr. Md. Amiruzzaman</p>
           <p>Treasurer, HISP Bangladesh Foundation</p>
           <div className="flex items-center space-x-2">

@@ -13,7 +13,7 @@ export default function Education() {
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
-            <span>2012 - 2027</span>
+            <span>2012 &ndash; 2027</span>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@ export default function Education() {
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
-            <span>2008 - 2011</span>
+            <span>2008 &ndash; 2011</span>
           </div>
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function Education() {
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
-            <span>2006 - 2008</span>
+            <span>2006 &ndash; 2008</span>
           </div>
         </div>
       </div>

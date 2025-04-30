@@ -14,9 +14,9 @@ export default function Experience() {
           <div className="flex items-baseline space-x-4 text-sm">
             <div className="flex items-center space-x-2 mt-1">
               <FaRegCalendarDays />
-              <span>
-                {exp.timeline.from} - {exp.timeline.to}
-              </span>
+              <p>
+                {exp.timeline.from} &ndash; {exp.timeline.to}
+              </p>
             </div>
             <div className="flex items-center space-x-2">
               <FaLocationDot />

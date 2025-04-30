@@ -4,8 +4,8 @@ import { SkillType } from "@/data/types";
 export default function Skills() {
   return (
     <section className="section-mt">
-      <h2 className="section-title">Skills/Core Competencies</h2>
-      <div className="mt-1">
+      <h2 className="section-title">Skills</h2>
+      <div className="mt-2">
         {skillData.map(({ category, skills }: SkillType) => {
           return (
             <div key={category} className="flex mb-2 items-baseline flex-wrap">
@@ -18,7 +18,6 @@ export default function Skills() {
                   {item}
                 </span>
               ))}
-              ks
             </div>
           );
         })}

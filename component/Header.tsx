@@ -1,14 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { MdEmail } from "react-icons/md";
-import {
-  FaPhone,
-  FaLinkedin,
-  FaGithub,
-  FaGlobe,
-  FaLocationDot,
-} from "react-icons/fa6";
-import { rubik } from "@/app/font";
+import { FaPhone, FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa6";
 
 export default function Header() {
   return (
@@ -20,8 +13,8 @@ export default function Header() {
               Md. Fahad Rahman
             </h1>
             <p className=" text-lg">
-              Mechanical Engineer | Administrative<br></br>Experience |
-              Full-Stack Enthusiast
+              Mechanical Engineer | Administrative<br></br>Experience | Web &
+              App Dev Enthusiast
             </p>
           </div>
           <div></div>
@@ -61,10 +54,6 @@ export default function Header() {
               portfolio-fahad9993.vercel.app
             </a>
           </div>
-          {/* <div className="flex items-center space-x-2">
-            <FaLocationDot />
-            <p>Dhaka, Bangladesh</p>
-          </div> */}
         </div>
       </div>
     </header>

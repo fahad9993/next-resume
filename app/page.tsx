@@ -1,4 +1,3 @@
-// app/page.tsx
 import Courses from "@/component/Courses";
 import Education from "@/component/Education";
 import Experience from "@/component/Experience";

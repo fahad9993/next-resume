@@ -20,10 +20,6 @@ export const Skills = [
       "API",
     ],
   },
-  // {
-  //   category: "Back-End Development",
-  //   skills: ["Node", "Express", "MongoDB", "API"],
-  // },
   { category: "App Development", skills: ["React Native"] },
   {
     category: "Programming Languages",
@@ -41,10 +37,11 @@ export const Experience = [
     },
     place: "Dhaka, Bangladesh",
     tors: [
-      "Performed assigned tasks in collaboration with teammates",
-      "Organized/Supported face-to-face and/or virtual team meetings",
-      "Managed HR Operations including employee documentation, salaries, leaves, promotions, and other related matters",
-      "Kept track of different projects, and provide reminders to the assigned teams and maintain liaison with the stakeholders",
+      "Collaborated with cross-functional teams to ensure the timely execution of administrative and financial tasks",
+      "Coordinated and supported both in-person and virtual meetings for operational planning and follow-up",
+      "Handled HR and administrative functions, including employee records, payroll, and leave management",
+      "Prepared structured reports, presentations, and financial documentation to support decision-making processes",
+      "Contributed ideas to improve workflow efficiency and support digital or process enhancements",
     ],
   },
   {
@@ -56,12 +53,11 @@ export const Experience = [
     },
     place: "Dhaka, Bangladesh",
     tors: [
-      "Prepared and finalised financial reports, adhering to specific templates and guidelines",
-      "Arranged accommodation in hotels and managed travel-related tasks for the staff",
-      "Undertook cash purchase according to the rules and processed the invoices",
-      "Provided administrative and secretarial support to provide health interventions to the FDMNs",
-      "Drafted SOPs with inputs from stakeholders and joint consultative meetings, MoU with different stakeholders, and proofread various guidelines, books, reports, and other writings; replied to general and administrative correspondence and finalized those",
-      "Managed mail, queries, and visitors with tact and discretion",
+      "Prepared and finalized financial reports in compliance with established formats and organizational guidelines",
+      "Coordinated staff logistics, including hotel accommodations and travel arrangements, ensuring cost-effective planning",
+      "Executed cash purchases and processed vendor invoices in line with organizational procurement policies",
+      "Delivered administrative and secretarial support to cross-functional teams working on public service initiatives",
+      "Handled incoming correspondence, queries, and visitor interactions with professionalism and confidentiality",
     ],
   },
   {
@@ -73,9 +69,9 @@ export const Experience = [
     },
     place: "Dhaka, Bangladesh",
     tors: [
-      "Contributed to the development of guidelines on clinical management for the FDMNs prepared by CSC, DGHS",
-      "Participated in the development of different manuals and guidelines",
-      "Contributed to the preparation of the epidemiological report of the diphtheria outbreak in the FDMN camps",
+      "Provided administrative and secretarial support to health intervention teams serving the Rohingya population, ensuring efficient project execution",
+      "Supported the preparation and signing of formal agreements (MoUs) and maintained accurate records of key organizational processes",
+      "Managed communication channels, ensuring timely and effective handling of queries, correspondence, and documents",
     ],
   },
 ];

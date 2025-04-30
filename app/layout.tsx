@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+
 import { inter, rubik } from "@/app/font";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Resume--Md. Fahad Rahman",
+  title: "Resume-Md. Fahad Rahman",
   description: "Professional Resume built with Next.js + Tailwind",
 };
 

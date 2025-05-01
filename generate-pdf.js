@@ -17,4 +17,4 @@ await page.pdf({
 });
 
 await browser.close();
-console.log("✅ PDF generated at resume.pdf");
+console.log("✅ PDF generated successfully");

@@ -11,19 +11,20 @@ import Thesis from "@/component/Thesis";
 
 export default function Home() {
   const handleDownload = async () => {
-    try {
+    const isDev = process.env.NODE_ENV === "development";
+
+    if (isDev) {
+      // Call the local API route to run the script for generating the PDF
+      const response = await fetch("/api/generate-pdf");
+      if (response.ok) {
+        alert("PDF generation started!");
+      } else {
+        alert("Failed to generate PDF");
+      }
+    } else {
+      // In production, use the existing PDF generation API route
       const response = await fetch("/api/pdf");
-
-      if (!response.ok) {
-        throw new Error("Failed to generate PDF");
-      }
-
       const blob = await response.blob();
-
-      if (blob.size === 0) {
-        throw new Error("Generated PDF is empty");
-      }
-
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
@@ -31,11 +32,6 @@ export default function Home() {
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
-
-      alert("✅ Resume downloaded successfully!");
-    } catch (error) {
-      console.error(error);
-      alert("❌ Failed to download resume.");
     }
   };
 

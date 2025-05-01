@@ -13,3 +13,12 @@ export interface ExperienceType {
   place: string;
   tors: string[];
 }
+
+export interface EducationType {
+  degree: string;
+  institution: string;
+  timeline: {
+    from: string;
+    to: string;
+  };
+}

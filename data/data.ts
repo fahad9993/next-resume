@@ -75,3 +75,30 @@ export const Experience = [
     ],
   },
 ];
+
+export const Education = [
+  {
+    degree: "BSc in Mechanical Engineering",
+    institution: "Bangladesh University of Engineering and Technology",
+    timeline: {
+      from: "2012",
+      to: "2017",
+    },
+  },
+  {
+    degree: "HSC",
+    institution: "Dhaka Residential Model College",
+    timeline: {
+      from: "2008",
+      to: "2011",
+    },
+  },
+  {
+    degree: "SSC",
+    institution: "Dhaka Residential Model College",
+    timeline: {
+      from: "2006",
+      to: "2008",
+    },
+  },
+];

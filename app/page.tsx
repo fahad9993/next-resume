@@ -39,7 +39,7 @@ export default function Home() {
     <div className="min-h-screen flex justify-center bg-gray-100 print:bg-white py-10 print:py-0 overflow-auto">
       {/* Download Button (Hidden on print) */}
       <Button handlePress={handleDownload} />
-      <div className="w-[794px] h-[1122px] bg-white shadow-md print:shadow-none print:p-0 print:w-full print:h-auto">
+      <div className="w-[794px] h-[1122px] bg-white md:shadow-md print:shadow-none print:p-0 print:w-full print:h-auto">
         <Header />
         {/******* Column 1 *******/}
         <div className="flex gap-10 w-full padding-x">

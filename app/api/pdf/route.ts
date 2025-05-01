@@ -1,43 +1,54 @@
 import { NextResponse } from "next/server";
-import puppeteer from "puppeteer";
+
+let chromium: any;
+let executablePath: string;
+let puppeteer: any;
+
+if (process.env.NODE_ENV === "development") {
+  // Local development
+  puppeteer = require("puppeteer");
+} else {
+  // Serverless (Vercel)
+  chromium = require("@sparticuz/chromium");
+  puppeteer = require("puppeteer-core");
+}
 
 export async function GET() {
-  try {
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ["--no-sandbox", "--disable-setuid-sandbox"], // Required on some cloud platforms
-    });
+  const isDev = process.env.NODE_ENV === "development";
 
-    const page = await browser.newPage();
+  const browser = await puppeteer.launch({
+    args: isDev ? [] : chromium.args,
+    defaultViewport: isDev ? null : chromium.defaultViewport,
+    executablePath: isDev ? undefined : await chromium.executablePath(), // Only for serverless
+    headless: isDev ? true : chromium.headless,
+    ignoreHTTPSErrors: true,
+  });
 
-    const targetUrl =
-      process.env.NODE_ENV === "production"
-        ? "https://next-resume-sepia.vercel.app"
-        : "http://localhost:3000";
+  const page = await browser.newPage();
 
-    await page.goto(targetUrl, { waitUntil: "networkidle0" });
+  const targetUrl = isDev
+    ? "http://localhost:3000"
+    : "https://next-resume-sepia.vercel.app";
 
-    const pdfBuffer = await page.pdf({
-      format: "A4",
-      printBackground: true,
-      margin: {
-        top: "0.5in",
-        bottom: "0.5in",
-        left: "0.5in",
-        right: "0.5in",
-      },
-    });
+  await page.goto(targetUrl, { waitUntil: "networkidle0" });
 
-    await browser.close();
+  const pdfBuffer = await page.pdf({
+    format: "A4",
+    printBackground: true,
+    margin: {
+      top: "0.5in",
+      bottom: "0.5in",
+      left: "0.5in",
+      right: "0.5in",
+    },
+  });
 
-    return new NextResponse(pdfBuffer, {
-      headers: {
-        "Content-Type": "application/pdf",
-        "Content-Disposition": "attachment; filename=Fahad_Resume.pdf",
-      },
-    });
-  } catch (error) {
-    console.error("PDF generation error:", error);
-    return new NextResponse("Failed to generate PDF", { status: 500 });
-  }
+  await browser.close();
+
+  return new NextResponse(pdfBuffer, {
+    headers: {
+      "Content-Type": "application/pdf",
+      "Content-Disposition": "attachment; filename=Fahad_Resume.pdf",
+    },
+  });
 }

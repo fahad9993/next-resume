@@ -1,29 +1,30 @@
 import { NextResponse } from "next/server";
 
-let chromium: any;
-let executablePath: string;
-let puppeteer: any;
-
-if (process.env.NODE_ENV === "development") {
-  // Local development
-  puppeteer = require("puppeteer");
-} else {
-  // Serverless (Vercel)
-  chromium = require("@sparticuz/chromium");
-  puppeteer = require("puppeteer-core");
-}
-
 export async function GET() {
   const isDev = process.env.NODE_ENV === "development";
 
-  const browser = await puppeteer.launch({
-    args: isDev ? [] : chromium.args,
-    defaultViewport: isDev ? null : chromium.defaultViewport,
-    executablePath: isDev ? undefined : await chromium.executablePath(), // Only for serverless
-    headless: isDev ? true : chromium.headless,
-    ignoreHTTPSErrors: true,
-  });
+  const puppeteer = isDev
+    ? await import("puppeteer")
+    : await import("puppeteer-core");
 
+  let launchOptions: any = {
+    headless: true,
+    ignoreHTTPSErrors: true,
+  };
+
+  if (!isDev) {
+    const { default: chromium } = await import("@sparticuz/chromium");
+
+    launchOptions = {
+      args: chromium.args,
+      defaultViewport: chromium.defaultViewport,
+      executablePath: await chromium.executablePath(),
+      headless: chromium.headless,
+      ignoreHTTPSErrors: true,
+    };
+  }
+
+  const browser = await puppeteer.launch(launchOptions);
   const page = await browser.newPage();
 
   const targetUrl = isDev

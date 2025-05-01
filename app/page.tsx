@@ -36,7 +36,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center bg-gray-100 print:bg-white py-10 print:py-0 overflow-auto">
+    <div className="min-h-screen flex justify-center md:bg-gray-100 print:bg-white py-10 print:py-0 overflow-auto">
       {/* Download Button (Hidden on print) */}
       <Button handlePress={handleDownload} />
       <div className="w-[794px] h-[1122px] bg-white md:shadow-md print:shadow-none print:p-0 print:w-full print:h-auto">

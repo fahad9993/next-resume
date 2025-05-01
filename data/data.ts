@@ -102,3 +102,17 @@ export const Education = [
     },
   },
 ];
+
+export const Reference = [
+  {
+    name: "Prof. Dr. Be-Nazir Ahmed",
+    designation:
+      "Former National Consultant, Directorate General of Health Services",
+    email: "benazir1959@gmail.com",
+  },
+  {
+    name: "Dr. Md. Amiruzzaman",
+    designation: "Treasurer, HISP Bangladesh Foundation",
+    email: "zamanamir25@gmail.com",
+  },
+];

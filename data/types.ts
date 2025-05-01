@@ -22,3 +22,9 @@ export interface EducationType {
     to: string;
   };
 }
+
+export interface ReferenceType {
+  name: string;
+  designation: string;
+  email: string;
+}

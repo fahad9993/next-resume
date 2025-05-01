@@ -11,15 +11,32 @@ import Thesis from "@/component/Thesis";
 
 export default function Home() {
   const handleDownload = async () => {
-    const response = await fetch("/api/pdf");
-    const blob = await response.blob();
-    const url = window.URL.createObjectURL(blob);
-    const link = document.createElement("a");
-    link.href = url;
-    link.download = "Fahad_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    try {
+      const response = await fetch("/api/pdf");
+
+      if (!response.ok) {
+        throw new Error("Failed to generate PDF");
+      }
+
+      const blob = await response.blob();
+
+      if (blob.size === 0) {
+        throw new Error("Generated PDF is empty");
+      }
+
+      const url = window.URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "Fahad_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      alert("✅ Resume downloaded successfully!");
+    } catch (error) {
+      console.error(error);
+      alert("❌ Failed to download resume.");
+    }
   };
 
   return (

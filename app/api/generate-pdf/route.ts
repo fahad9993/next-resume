@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import { exec } from "child_process";
 
 export async function GET() {
-  return new Promise((resolve, reject) => {
+  return new Promise<NextResponse>((resolve, reject) => {
     exec(
       "node ./generate-pdf.js",
       (error: Error | null, stdout: string, stderr: string) => {

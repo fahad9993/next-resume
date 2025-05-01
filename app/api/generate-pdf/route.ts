@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-const exec = require("child_process").exec;
+import { exec } from "child_process";
 
 export async function GET() {
   return new Promise((resolve, reject) => {

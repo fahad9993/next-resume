@@ -13,7 +13,7 @@ export default function Education() {
         <div className="flex items-center space-x-4 text-sm">
           <div className="flex items-center space-x-2 mt-1">
             <FaRegCalendarDays />
-            <span>2012 &ndash; 2027</span>
+            <span>2012 &ndash; 2017</span>
           </div>
         </div>
       </div>

@@ -9,9 +9,9 @@ export default function Button({ handlePress }: buttonProps) {
   return (
     <button
       onClick={handlePress}
-      className="bg-primary p-3 md:p-5 rounded-full text-amber-5 font-bold bottom-5 right-5 lg:bottom-10 lg:right-10 fixed text-white hover:cursor-pointer hover:bg-secondary print:hidden"
+      className="fixed bottom-5 right-5 lg:bottom-10 lg:right-10 z-50 w-12 h-12 md:w-16 md:h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:bg-secondary active:scale-95 transition-all duration-200 print:hidden"
     >
-      <FaFileDownload className="w-5 h-5 md:w-10 md:h-10" />
+      <FaFileDownload className="w-5 h-5 md:w-8 md:h-8" />
     </button>
   );
 }

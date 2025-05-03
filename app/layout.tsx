@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Toaster from "@/component/Toaster";
 
 import { inter, rubik } from "@/app/font";
 import "./globals.css";
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${rubik.variable} ${inter.variable} antialiased`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );

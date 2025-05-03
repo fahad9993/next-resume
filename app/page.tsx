@@ -8,6 +8,8 @@ import Reference from "@/component/Reference";
 import Skills from "@/component/Skills";
 import Summary from "@/component/Summary";
 import Thesis from "@/component/Thesis";
+import { promiseMessage } from "@/component/Toaster";
+import { toast } from "react-toastify";
 
 export default function Home() {
   const handleDownload = async () => {
@@ -15,15 +17,10 @@ export default function Home() {
 
     if (isDev) {
       // Call the local API route to run the script for generating the PDF
-      const response = await fetch("/api/generate-pdf");
-      if (response.ok) {
-        alert("PDF generation started!");
-      } else {
-        alert("Failed to generate PDF");
-      }
+      await toast.promise(fetch("/api/generate-pdf"), promiseMessage);
     } else {
       // In production, use the existing PDF generation API route
-      const response = await fetch("/api/pdf");
+      const response = await toast.promise(fetch("/api/pdf"), promiseMessage);
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");

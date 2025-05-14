@@ -91,4 +91,8 @@ body {
   .avoid-break {
     page-break-inside: avoid;
   }
+  svg {
+    width: inherit; /* Inherit the font size from the parent */
+    height: inherit; /* Same for height */
+  }
 }

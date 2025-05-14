@@ -6,20 +6,20 @@ import { FaPhone, FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa6";
 export default function Header() {
   return (
     <header className="bg-primary text-white padding-x padding-t">
-      <div className="text-center flex flex-row justify-between pb-4 w-full">
+      <div className="flex md:flex-row print:flex-row flex-col md:justify-between print:justify-between justify-center items-center md:items-start print:items-start pb-4 w-full">
         <div className="w-fit">
-          <div className="text-left mb-2">
+          <div className="md:text-left print:text-left text-center mb-2">
             <h1 className="text-4xl font-bold mb-2 uppercase">
               Md. Fahad Rahman
             </h1>
-            <p className=" text-lg">
+            <p className="text-lg">
               Mechanical Engineer | Administrative<br></br>Experience | Web &
               App Dev Enthusiast
             </p>
           </div>
-          <div></div>
+          {/* <div></div> */}
         </div>
-        <div className="w-fit">
+        <div className="w-fit my-4 md:my-0 print:my-0">
           <Image
             src="/PP_Photo_Square.jpg"
             width={100}
@@ -29,7 +29,7 @@ export default function Header() {
           />
         </div>
 
-        <div className="flex flex-col items-end text-right gap-1 w-fit">
+        <div className="flex flex-col md:items-end print:items-end items-center gap-1 w-fit">
           <div className="flex items-center space-x-2">
             <MdEmail />
             <a href="mailto:fahad9993@gmail.com">fahad9993@gmail.com</a>

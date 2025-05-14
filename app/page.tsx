@@ -36,16 +36,16 @@ export default function Home() {
     <div className="min-h-screen flex justify-center md:bg-gray-100 print:bg-white py-10 print:py-0 overflow-auto">
       {/* Download Button (Hidden on print) */}
       <Button handlePress={handleDownload} />
-      <div className="w-[794px] h-[1122px] bg-white md:shadow-md print:shadow-none print:p-0 print:w-full print:h-auto">
+      <div className="md:w-[794px] md:h-[1122px] bg-white md:shadow-md print:shadow-none print:p-0">
         <Header />
-        {/******* Column 1 *******/}
-        <div className="flex gap-10 w-full padding-x">
-          <div className="w-[60%]">
+        <div className="md:flex print:flex md:gap-10 print:gap-10 w-full padding-x">
+          {/******* Column 1 *******/}
+          <div className="md:w-[60%] print:w-[60%]">
             <Summary />
             <Experience />
           </div>
           {/******* Column 2 *******/}
-          <div className="w-[40%]">
+          <div className="md:w-[40%] print:w-[40%]">
             <Skills />
             <Education />
             <Thesis />

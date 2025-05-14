@@ -11,13 +11,11 @@ export default function Education() {
         <div key={edu.degree}>
           <h3 className="section-h1">{edu.degree}</h3>
           <h4 className="section-h2">{edu.institution}</h4>
-          <div className="flex items-center space-x-4 text-sm">
-            <div className="flex items-center space-x-2 mt-1">
-              <FaRegCalendarDays className="icon" />
-              <span>
-                {edu.timeline.from} &ndash; {edu.timeline.to}
-              </span>
-            </div>
+          <div className="flex items-center space-x-2 mt-1 text-sm">
+            <FaRegCalendarDays />
+            <span>
+              {edu.timeline.from} &ndash; {edu.timeline.to}
+            </span>
           </div>
         </div>
       ))}

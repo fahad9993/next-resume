@@ -4,6 +4,7 @@ const browser = await puppeteer.launch();
 const page = await browser.newPage();
 
 await page.goto("http://localhost:3000", { waitUntil: "networkidle0" });
+await page.evaluateHandle("document.fonts.ready");
 await page.pdf({
   path: "Fahad_Resume.pdf",
   format: "A4",

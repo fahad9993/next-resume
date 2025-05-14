@@ -13,13 +13,13 @@ export default function Experience() {
           <h4 className="section-h2">{exp.company}</h4>
           <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center space-x-2 mt-1">
-              <FaRegCalendarDays />
+              <FaRegCalendarDays className="icon" />
               <p>
                 {exp.timeline.from} &ndash; {exp.timeline.to}
               </p>
             </div>
             <div className="flex items-center space-x-2">
-              <FaLocationDot />
+              <FaLocationDot className="icon" />
               <p>{exp.place}</p>
             </div>
           </div>

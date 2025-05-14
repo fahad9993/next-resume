@@ -11,7 +11,7 @@ export default function Experience() {
         <div key={exp.company}>
           <h3 className="section-h1">{exp.position}</h3>
           <h4 className="section-h2">{exp.company}</h4>
-          <div className="flex items-baseline space-x-4 text-sm">
+          <div className="flex items-center space-x-4 text-sm">
             <div className="flex items-center space-x-2 mt-1">
               <FaRegCalendarDays />
               <p>

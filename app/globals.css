@@ -60,10 +60,6 @@ body {
   .section-mt {
     @apply mt-6;
   }
-
-  .icon {
-    @apply text-sm align-middle inline-block;
-  }
 }
 
 /* global styles for print layout */

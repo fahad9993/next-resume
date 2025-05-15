@@ -1,7 +1,8 @@
-import { FaLocationDot, FaRegCalendarDays } from "react-icons/fa6";
+import { FaCalendarDays, FaLocationDot } from "react-icons/fa6";
 
 import { Experience as experienceData } from "@/data/data";
 import { ExperienceType } from "@/data/types";
+import StaticIcon from "@/component/StaticIcon";
 
 export default function Experience() {
   return (
@@ -13,13 +14,15 @@ export default function Experience() {
           <h4 className="section-h2">{exp.company}</h4>
           <div className="flex items-center space-x-4 text-sm mt-1">
             <div className="flex items-center space-x-2">
-              <FaRegCalendarDays />
+              {/* <FaCalendarDays /> */}
+              <StaticIcon name="calendar" className="relative top-[-1px]" />
               <p>
                 {exp.timeline.from} &ndash; {exp.timeline.to}
               </p>
             </div>
             <div className="flex items-center space-x-2">
-              <FaLocationDot />
+              {/* <FaLocationDot /> */}
+              <StaticIcon name="location" className="relative top-[-1px]" />
               <p>{exp.place}</p>
             </div>
           </div>

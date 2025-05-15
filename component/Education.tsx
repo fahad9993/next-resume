@@ -13,8 +13,8 @@ export default function Education() {
           <h3 className="section-h1">{edu.degree}</h3>
           <h4 className="section-h2">{edu.institution}</h4>
           <div className="flex items-center space-x-2 mt-1 text-sm">
-            {/* <FaCalendarDays /> */}
-            <StaticIcon name="calendar" className="relative top-[-1px]" />
+            <FaCalendarDays size={11} className="relative top-[-1px]" />
+            {/* <StaticIcon name="calendar" className="relative top-[-1px]" /> */}
             <span>
               {edu.timeline.from} &ndash; {edu.timeline.to}
             </span>

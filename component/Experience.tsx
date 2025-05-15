@@ -14,15 +14,15 @@ export default function Experience() {
           <h4 className="section-h2">{exp.company}</h4>
           <div className="flex items-center space-x-4 text-sm mt-1">
             <div className="flex items-center space-x-2">
-              {/* <FaCalendarDays /> */}
-              <StaticIcon name="calendar" className="relative top-[-1px]" />
+              <FaCalendarDays size={11} className="relative top-[-1px]" />
+              {/* <StaticIcon name="calendar" className="relative top-[-1px]" /> */}
               <p>
                 {exp.timeline.from} &ndash; {exp.timeline.to}
               </p>
             </div>
             <div className="flex items-center space-x-2">
-              {/* <FaLocationDot /> */}
-              <StaticIcon name="location" className="relative top-[-1px]" />
+              <FaLocationDot size={11} className="relative top-[-1px]" />
+              {/* <StaticIcon name="location" className="relative top-[-1px]" /> */}
               <p>{exp.place}</p>
             </div>
           </div>

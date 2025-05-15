@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLocationDot, FaClock, FaCalendarDays } from "react-icons/fa6";
-import StaticIcon from "@/component/StaticIcon";
+import MyIcon from "@/component/MyIcon";
 
 export default function Courses() {
   return (
@@ -10,18 +10,15 @@ export default function Courses() {
       <p className="mt-1">110 MW & 115 MW Barge-Mounted Power Plant</p>
       <div className="flex items-baseline space-x-4 text-sm mt-1">
         <div className="flex items-center space-x-2">
-          <FaCalendarDays size={11} className="relative top-[-1px]" />
-          {/* <StaticIcon name="calendar" className="relative top-[-1px]" /> */}
+          <MyIcon Icon={FaCalendarDays} />
           <span>08/2016</span>
         </div>
         <div className="flex items-center space-x-2">
-          <FaClock size={11} className="relative top-[-1px]" />
-          {/* <StaticIcon name="clock" className="relative top-[-1px]" /> */}
+          <MyIcon Icon={FaClock} />
           <span>21 days</span>
         </div>
         <div className="flex items-center space-x-2">
-          <FaLocationDot size={11} className="relative top-[-1px]" />
-          {/* <StaticIcon name="location" className="relative top-[-1px]" /> */}
+          <MyIcon Icon={FaLocationDot} />
           <p>Khulna, Bangladesh</p>
         </div>
       </div>

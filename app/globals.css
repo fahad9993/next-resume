@@ -16,6 +16,7 @@ body {
   --background: #ffffff;
   --foreground: #171717;
   --custom-margin: 48px;
+  --custom-margin-mobile: 10px;
 }
 
 @layer base {
@@ -35,12 +36,23 @@ body {
 
 @layer utilities {
   .padding-t {
-    padding-top: var(--custom-margin);
+    padding-top: var(--custom-margin-mobile);
   }
 
   .padding-x {
-    padding-left: var(--custom-margin);
-    padding-right: var(--custom-margin);
+    padding-left: var(--custom-margin-mobile);
+    padding-right: var(--custom-margin-mobile);
+  }
+
+  @variant md {
+    .padding-t {
+      padding-top: var(--custom-margin);
+    }
+
+    .padding-x {
+      padding-left: var(--custom-margin);
+      padding-right: var(--custom-margin);
+    }
   }
 }
 

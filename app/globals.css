@@ -16,7 +16,7 @@ body {
   --background: #ffffff;
   --foreground: #171717;
   --custom-margin: 48px;
-  --custom-margin-mobile: 10px;
+  --custom-margin-mobile: 20px;
 }
 
 @layer base {
@@ -45,6 +45,17 @@ body {
   }
 
   @variant md {
+    .padding-t {
+      padding-top: var(--custom-margin);
+    }
+
+    .padding-x {
+      padding-left: var(--custom-margin);
+      padding-right: var(--custom-margin);
+    }
+  }
+
+  @variant print {
     .padding-t {
       padding-top: var(--custom-margin);
     }

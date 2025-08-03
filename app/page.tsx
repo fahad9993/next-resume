@@ -50,7 +50,7 @@ export default function Home() {
             <Education />
             <Thesis />
             <Courses />
-            <Reference />
+            {/* <Reference /> */}
           </div>
         </div>
       </div>

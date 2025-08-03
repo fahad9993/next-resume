@@ -3,13 +3,13 @@ import React from "react";
 export default function Summary() {
   return (
     <section className="section-mt">
-      <h2 className="section-title">Summary</h2>
+      <h2 className="section-title">Professional Summary</h2>
       <p className="mt-2">
-        Detail-oriented professional with a mechanical engineering background
-        and administrative and finance-related experience. Skilled in handling
-        data and systems, with a flexible and adaptive approach to teamwork and
-        changing environments. Eager to contribute to process improvement and
-        support digital initiatives within dynamic organizational settings.
+        Detail-oriented professional with a background in Mechanical Engineering
+        and experience in administrative and finance operations. Highly skilled
+        in data handling, systems management, and process improvement. Adaptable
+        team player with a proactive approach to supporting digital initiatives
+        and driving organizational growth in dynamic environments.
       </p>
     </section>
   );

@@ -1,29 +1,29 @@
 export const Skills = [
   {
-    category: "Softwares",
+    category: "Softwares:",
     skills: ["Excel", "Word", "Powerpoint", "Adobe Illustrator", "Solidworks"],
   },
   {
-    category: "Typesetting",
-    skills: ["Latex"],
+    category: "Typesetting & Documentation:",
+    skills: ["LaTeX"],
   },
   {
-    category: "Web Development",
+    category: "Web Development:",
     skills: [
       "HTML",
       "CSS",
       "JavaScript",
       "React",
-      "Node",
-      "Express",
+      "Node.js",
+      "Express.js",
       "MongoDB",
-      "API",
+      "RESTful APIs",
     ],
   },
-  { category: "App Development", skills: ["React Native"] },
+  { category: "App Development:", skills: ["React Native"] },
   {
-    category: "Programming Languages",
-    skills: ["Python", "C"],
+    category: "Programming Languages:",
+    skills: ["Python", "MATLAB", "C"],
   },
 ];
 

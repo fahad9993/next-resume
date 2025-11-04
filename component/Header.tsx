@@ -38,12 +38,12 @@ export default function Header() {
             <FaPhone />
             <a href="tel:+8801760979908">+880-1760 979 908</a>
           </div>
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <FaLinkedin />
             <a href="https://www.linkedin.com/in/fahad9993/">
               linkedin.com/in/fahad9993
             </a>
-          </div>
+          </div> */}
           <div className="flex items-center space-x-2">
             <FaGithub />
             <a href="https://github.com/fahad9993">github.com/fahad9993</a>

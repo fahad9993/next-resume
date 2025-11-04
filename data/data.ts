@@ -28,22 +28,22 @@ export const Skills = [
 ];
 
 export const Experience = [
-  {
-    company: "HISP Bangladesh Foundation",
-    position: "Admin and Accounts Officer",
-    timeline: {
-      from: "01/2022",
-      to: "05/2022",
-    },
-    place: "Dhaka, Bangladesh",
-    tors: [
-      "Collaborated with cross-functional teams to ensure the timely execution of administrative and financial tasks",
-      "Coordinated and supported both in-person and virtual meetings for operational planning and follow-up",
-      "Handled HR and administrative functions, including employee records, payroll, and leave management",
-      "Prepared structured reports, presentations, and financial documentation to support decision-making processes",
-      "Contributed ideas to improve workflow efficiency and support digital or process enhancements",
-    ],
-  },
+  // {
+  //   company: "HISP Bangladesh Foundation",
+  //   position: "Admin and Accounts Officer",
+  //   timeline: {
+  //     from: "01/2022",
+  //     to: "05/2022",
+  //   },
+  //   place: "Dhaka, Bangladesh",
+  //   tors: [
+  //     "Collaborated with cross-functional teams to ensure the timely execution of administrative and financial tasks",
+  //     "Coordinated and supported both in-person and virtual meetings for operational planning and follow-up",
+  //     "Handled HR and administrative functions, including employee records, payroll, and leave management",
+  //     "Prepared structured reports, presentations, and financial documentation to support decision-making processes",
+  //     "Contributed ideas to improve workflow efficiency and support digital or process enhancements",
+  //   ],
+  // },
   {
     company: "World Health Organization",
     position: "Administrative Assistant",

@@ -1,6 +1,5 @@
 "use client";
 import Button from "@/component/Button";
-import Courses from "@/component/Courses";
 import Education from "@/component/Education";
 import Experience from "@/component/Experience";
 import Header from "@/component/Header";
@@ -10,6 +9,9 @@ import Summary from "@/component/Summary";
 import Thesis from "@/component/Thesis";
 import { promiseMessage } from "@/component/Toaster";
 import { toast } from "react-toastify";
+import Training from "@/component/Training";
+import Courses from "@/component/Courses";
+import Projects from "@/component/Projects";
 
 export default function Home() {
   const handleDownload = async () => {
@@ -43,13 +45,16 @@ export default function Home() {
           <div className="md:w-[60%] print:w-[60%]">
             <Summary />
             <Experience />
+            <Training />
+            <Projects />
           </div>
           {/******* Column 2 *******/}
           <div className="md:w-[40%] print:w-[40%]">
             <Skills />
             <Education />
-            <Thesis />
             <Courses />
+            <Thesis />
+
             {/* <Reference /> */}
           </div>
         </div>

@@ -11,12 +11,22 @@ export default function Thesis() {
       </p>
 
       {/* Combined Focus, Methodology, and Findings */}
-      <p className="mt-2 text-sm">
-        <strong>Methodology:</strong> Experimental setups were designed using
-        force-sensing resistors (FSR) to measure stress relaxation.{" "}
-        <strong>Findings:</strong> Significant stress relaxation behavior was
-        observed, highlighting SMA's time-dependent mechanical properties.
-      </p>
+      <ul className="list-disc pl-5 mt-2 space-y-3">
+        <li>
+          <strong>Design & Development:</strong> Designed custom torsion and
+          bending fixtures with Arduino-integrated Force Sensing Resistor
+          sensors for precise load measurements.
+        </li>
+        <li>
+          <strong>Findings:</strong> Significant stress relaxation behavior was
+          observed, highlighting SMA&apos;s time-dependent mechanical
+          properties.
+        </li>
+        <li>
+          <strong>Comparative Insights:</strong> NiTi SMA exhibited faster and
+          greater stress relaxation than stainless steel and copper.
+        </li>
+      </ul>
     </section>
   );
 }

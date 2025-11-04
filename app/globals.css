@@ -81,7 +81,7 @@ body {
   }
 
   .section-mt {
-    @apply mt-6;
+    @apply mt-4;
   }
 }
 
